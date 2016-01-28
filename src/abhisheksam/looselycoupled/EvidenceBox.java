@@ -28,7 +28,7 @@ public class EvidenceBox {
 
     public List<Evidence> getEvidenceType(String type){
        for (Evidence e : allEvidence){
-           if(e.toString().equals(type)){
+           if(e.toString().toUpperCase().equals(type.toUpperCase())){
                searchedEvidence.add(e);
            }
        }
@@ -46,7 +46,7 @@ public class EvidenceBox {
             int amount = 0;
             for (Evidence o : allEvidence) {
 
-                if (o.toString().equals(t)) {
+                if (o.toString().toUpperCase().equals(t)) {
                     amount++;
                 }
             }

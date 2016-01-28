@@ -37,7 +37,7 @@ public class Policeman {
         wantedItems.removeAll(wantedItems);
         for (EvidenceBox b : allEvidenceBoxes) {
             if (b.getCaseNumber().equals(caseNumber)) {
-                wantedItems.addAll(b.getEvidenceType(typeOfEvidence));
+                wantedItems.addAll(b.getEvidenceType(typeOfEvidence.toUpperCase()));
 
             }
         }
