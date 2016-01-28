@@ -27,7 +27,7 @@ public class Main {
         Policeman JLenk = new Policeman("J.Lenk");
         JLenk.addBoxes(box);
         JLenk.getAllPieceEvidence("2005000381", "DNA");
-        
+        //BLAHALHALAHLAHLAHALA
     }
 
 }
