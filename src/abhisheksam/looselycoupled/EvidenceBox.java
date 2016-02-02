@@ -58,9 +58,7 @@ public class EvidenceBox {
         allEvidence.add(obj);
     }
 
-    public List<Evidence> getAllEvidence() {
-        return allEvidence;
-    }
+    
 
     public String getCaseName() {
         return caseName;
