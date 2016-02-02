@@ -12,7 +12,7 @@ package abhisheksam.tightlycoupled;
 public class Evidence {
     private String typeOfEvidence;
     public Evidence(String type){
-        typeOfEvidence= type.toUpperCase();
+        typeOfEvidence= type;
     }
     public String toString(){
         return typeOfEvidence;
