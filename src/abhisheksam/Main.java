@@ -16,7 +16,8 @@ import abhisheksam.tightlycoupled.Policeman;
 public class Main {
 
     /**
-     * @param args the command line arguments
+     * This is the main method.
+     * @param args The command line arguments
      */
     public static void main(String[] args) {
         // TODO code application logic here
@@ -32,10 +33,10 @@ public class Main {
        
       
         box.displayTypesOfEvidence();
-        Policeman JLenk = new Policeman("J.Lenk");
+        Policeman JLenk = new Policeman("J.Lenk");                  //Create the 2 policemen objects
         Policeman AColborn = new Policeman("A. Colborn");
-        JLenk.addBoxes(box);
-        JLenk.getAllPieceEvidence("2005000381", "clothing fibre");
+        JLenk.addBoxes(box);                                        //Take the box with case S. Avery
+        JLenk.getAllPieceEvidence("2005000381", "clothing fibre");  //Get all evidence
 
     }
 

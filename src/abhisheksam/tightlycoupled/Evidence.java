@@ -6,7 +6,7 @@
 package abhisheksam.tightlycoupled;
 
 /**
- *
+ * This implements a piece of evidence from a crime scence.
  * @author aking
  */
 public class Evidence {
@@ -14,8 +14,13 @@ public class Evidence {
     public Evidence(String type){
         typeOfEvidence= type;
     }
+
+    /**
+     * This method prints the type of the evidence.
+     * 
+     */
     public String toString(){
-        return typeOfEvidence;
+        return typeOfEvidence;   //Prints the evidence's type as a String.
     }
     
 }
