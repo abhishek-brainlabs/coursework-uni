@@ -10,6 +10,7 @@ import java.util.List;
 
 /**
  * Implements a Policeman with a name and a collection of evidence boxes.
+ *
  * @author aking
  */
 public class Policeman {
@@ -20,6 +21,7 @@ public class Policeman {
 
     /**
      * This constructs a Policeman with a name.
+     *
      * @param name Name of the Policeman
      */
     public Policeman(String name) {
@@ -31,26 +33,28 @@ public class Policeman {
 
     /**
      * Returns the name of the Policeman
-     * 
+     *
+     * @return Will output the name of the policeman
      */
     public String toString() {
         return name;
     }
-    
+
     /**
      * This method adds box o.
-     * @param o Box to add
+     *
+     * @param o Adds the Evidence Box to the ArrayList
      */
-    public void addBoxes(EvidenceBox o){
+    public void addBoxes(EvidenceBox o) {
         allEvidenceBoxes.add(o);
     }
 
     /**
-     * Get all pieces of evidence of a certain type and case numbe.
+     * Get all pieces of evidence of a certain type and case number.
+     *
      * @param caseNumber Case number
      * @param typeOfEvidence The type of evidence
      */
-    
     public void getAllPieceEvidence(String caseNumber, String typeOfEvidence) {
         wantedItems.removeAll(wantedItems);
         for (EvidenceBox b : allEvidenceBoxes) {
@@ -62,10 +66,10 @@ public class Policeman {
                 }
             }
         }
-        if(!(wantedItems.isEmpty())){
-            System.out.println("Pieces of "+typeOfEvidence+" found in evidence box number "+ caseNumber+
-            " Found by "+toString()+": "+wantedItems);
-        }else{
+        if (!(wantedItems.isEmpty())) {
+            System.out.println("Pieces of " + typeOfEvidence + " found in evidence box number " + caseNumber
+                    + " Found by " + toString() + ": " + wantedItems);
+        } else {
             System.out.println("Not Found In The Box");
         }
     }

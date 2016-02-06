@@ -30,7 +30,6 @@ public class Main {
         EvidenceBox box = new EvidenceBox("S.Avery's  case", "2005000381");
         box.addEvidence(e1);
         box.addEvidence(e2);
-       
       
         box.displayTypesOfEvidence();
         Policeman JLenk = new Policeman("J.Lenk");                  //Create the 2 policemen objects

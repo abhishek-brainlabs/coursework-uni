@@ -6,21 +6,32 @@
 package abhisheksam.tightlycoupled;
 
 /**
- * This implements a piece of evidence from a crime scence.
+ * This implements a piece of evidence from a crime scene.
+ *
  * @author aking
  */
 public class Evidence {
+
     private String typeOfEvidence;
-    public Evidence(String type){
-        typeOfEvidence= type;
+
+    /**
+     * This constructor will set the type of the evidence to the value of the
+     * parameter
+     *
+     * @param type Is the type of the evidence
+     */
+    public Evidence(String type) {
+        //Constructor which sets the type of the evidence.
+        typeOfEvidence = type;
     }
 
     /**
-     * This method prints the type of the evidence.
-     * 
+     * This method returns the type of the evidence.
+     *
+     * @return returns the type of evidence
      */
-    public String toString(){
-        return typeOfEvidence;   //Prints the evidence's type as a String.
+    public String toString() {
+        return typeOfEvidence;   //return the evidence's type when the object is called.
     }
-    
+
 }

@@ -11,6 +11,7 @@ import java.util.List;
 
 /**
  * Implements a box that contains multiple pieces of evidence for a crime.
+ *
  * @author aking
  */
 public class EvidenceBox {
@@ -21,6 +22,7 @@ public class EvidenceBox {
 
     /**
      * This creates an evidence box with a case name and number.
+     *
      * @param name The name of the case
      * @param number Case number
      */
@@ -32,7 +34,7 @@ public class EvidenceBox {
 
     /**
      * This method displays the types of evidence in the box.
-     * 
+     *
      */
     public void displayTypesOfEvidence() {
         ArrayList<String> types = new ArrayList<>();
@@ -53,13 +55,20 @@ public class EvidenceBox {
             System.out.println(amount + " x " + t);
         }
     }
-    
+    //This methods adds a evidence object to the evidence box 
+
+    /**
+     * This will add evidence to the evidence list.
+     *
+     * @param obj Evidence Object
+     */
     public void addEvidence(Evidence obj) {
         allEvidence.add(obj);
     }
-    
+
     /**
      * This method prints the evidences in the box.
+     *
      * @return Every Evidence in the box
      */
     public List<Evidence> getAllEvidence() {
@@ -68,14 +77,16 @@ public class EvidenceBox {
 
     /**
      * This method gives the name of the case.
+     *
      * @return Name of the case
      */
     public String getCaseName() {
         return caseName;
     }
-    
+
     /**
      * This method allows for the setting of case name.
+     *
      * @param caseName Name of the case
      */
     public void setCaseName(String caseName) {
@@ -84,6 +95,7 @@ public class EvidenceBox {
 
     /**
      * This method prints the case number.
+     *
      * @return Case number
      */
     public String getCaseNumber() {
@@ -92,6 +104,7 @@ public class EvidenceBox {
 
     /**
      * This method allows for the setting of case number.
+     *
      * @param caseNumber Case number
      */
     public void setCaseNumber(String caseNumber) {
